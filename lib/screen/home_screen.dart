@@ -14,27 +14,21 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text("My APP"),
       ),
-      body: Row(
+      body: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Column(
-            
-            children: [
+          Column(children: [
             Icon(Icons.call, color: Color.fromARGB(255, 6, 88, 239)),
             Text("Call"),
           ]),
-          Column(
-            children: [
-              Icon(Icons.camera, color: Color.fromARGB(255, 6, 88, 239)),
+          Column(children: [
+            Icon(Icons.camera, color: Color.fromARGB(255, 6, 88, 239)),
             Text("Camera"),
-            ]
-          ),
-          Column(
-            children: [
-              Icon(Icons.share, color: Color.fromARGB(255, 6, 88, 239)),
+          ]),
+          Column(children: [
+            Icon(Icons.share, color: Color.fromARGB(255, 6, 88, 239)),
             Text("Share"),
-            ]
-          )
+          ])
         ],
       ),
     );
